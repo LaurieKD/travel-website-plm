@@ -76,20 +76,14 @@ section {
 }
 
 a {
-  display: block;
-  color: white;
+	display: block;
+	color: white;
 	background-color: var(--main-background-color);
 	border-radius: 4px;
 	padding: 10px 15px;
-  margin: 40px auto 10px auto;
+	margin: 40px auto 10px auto;
 	text-decoration: none;
 	font-weight: var(--main-font-weight);
-}
-}
-
-.container {
-	max-width: 1200px;
-	margin: 0 auto;
 }
 
 .button-header {
@@ -99,7 +93,12 @@ a {
 	padding: 10px 15px;
 	text-decoration: none;
 	font-weight: var(--main-font-weight);
-  width: 200px;
+	width: 200px;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
 .why-plm {
@@ -127,14 +126,14 @@ a {
 	max-width: 1000px;
 	margin: 0 auto;
 	grid-gap: 50px;
-  border-radius: 10px;
+	border-radius: 10px;
 }
 
 .activity {
-  display: block;
-  border-radius: 5px;
-  background-color: white;
-  padding: 15px;
+	display: block;
+	border-radius: 5px;
+	background-color: white;
+	padding: 15px;
 }
 
 .footer {
@@ -156,18 +155,14 @@ a {
 		font-size: 20px;
 	}
 
-  
-
 	footer {
 		grid-template-columns: 1fr;
 		grid-gap: 0px;
 	}
 
-  
 	.why-plm {
 		grid-template-columns: 1fr;
-    padding: 0px 50px;
-
+		padding: 0px 50px;
 	}
 
 	.image-why-plm {
@@ -178,13 +173,13 @@ a {
 		text-align: center;
 	}
 
-  .activities {
-	grid-template-columns: 1fr;
-}
+	.activities {
+		grid-template-columns: 1fr;
+	}
 
-.activity {
-  margin: 0px 20px;
-}
+	.activity {
+		margin: 0px 20px;
+	}
 	.footer {
 		padding: 10px 40px;
 	}
