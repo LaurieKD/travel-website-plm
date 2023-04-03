@@ -1,10 +1,12 @@
 :root {
 	--main-font-family: poppins;
 	--main-font-weight: 400;
+	--main-background-color: #0d2137;
 }
 
 body {
 	font-family: var(--main-font-family);
+	background-color: var(--main-background-color);
 }
 
 header {
@@ -34,8 +36,23 @@ p {
 	font-weight: var(--main-font-weight);
 }
 
+h4 {
+	font-size: 40px;
+	margin: 10px 0px;
+}
+
+h6,
+h5 {
+	font-size: 16px;
+}
+
+h5 {
+	color: grey;
+	margin: 0px;
+}
+
 p {
-	font-size: 12px;
+	font-size: 16px;
 }
 
 footer {
@@ -53,6 +70,28 @@ li {
 	font-size: 12px;
 }
 
+section {
+	background-color: white;
+	padding: 50px 0px;
+}
+
+a {
+  display: block;
+  color: white;
+	background-color: var(--main-background-color);
+	border-radius: 4px;
+	padding: 10px 15px;
+  margin: 40px auto 10px auto;
+	text-decoration: none;
+	font-weight: var(--main-font-weight);
+}
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
 .button-header {
 	color: black;
 	background-color: white;
@@ -60,6 +99,42 @@ li {
 	padding: 10px 15px;
 	text-decoration: none;
 	font-weight: var(--main-font-weight);
+  width: 200px;
+}
+
+.why-plm {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	max-width: 1000px;
+	margin: 0 auto;
+	grid-gap: 50px;
+}
+
+.image-why-plm {
+	display: block;
+	width: 100%;
+	border-radius: 5px;
+}
+
+.activities-section {
+	background-color: whitesmoke;
+	text-align: center;
+}
+
+.activities {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	max-width: 1000px;
+	margin: 0 auto;
+	grid-gap: 50px;
+  border-radius: 10px;
+}
+
+.activity {
+  display: block;
+  border-radius: 5px;
+  background-color: white;
+  padding: 15px;
 }
 
 .footer {
@@ -72,7 +147,7 @@ li {
 	padding: 60px 150px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
 	h1 {
 		font-size: 40px;
 	}
@@ -81,7 +156,36 @@ li {
 		font-size: 20px;
 	}
 
+  
+
 	footer {
 		grid-template-columns: 1fr;
+		grid-gap: 0px;
+	}
+
+  
+	.why-plm {
+		grid-template-columns: 1fr;
+    padding: 0px 50px;
+
+	}
+
+	.image-why-plm {
+		display: none;
+	}
+
+	.text-why-plm {
+		text-align: center;
+	}
+
+  .activities {
+	grid-template-columns: 1fr;
+}
+
+.activity {
+  margin: 0px 20px;
+}
+	.footer {
+		padding: 10px 40px;
 	}
 }
