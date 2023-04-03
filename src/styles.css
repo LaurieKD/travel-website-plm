@@ -1,0 +1,7 @@
+:root {
+	--main-font-family: poppins;
+}
+
+body {
+	font-family: var(--main-font-family);
+}
