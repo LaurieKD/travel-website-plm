@@ -14,6 +14,7 @@ header {
 		url("../images/Plancher-les-Mines-header.png");
 	background-repeat: no-repeat;
 	background-size: cover;
+	border-radius: 5px 5px 0px 0px;
 	width: 100%;
 	text-align: center;
 	padding: 100px 0px 250px 0px;
@@ -66,24 +67,25 @@ ul {
 	padding-left: 0px;
 }
 
-li {
-	font-size: 12px;
-}
-
 section {
 	background-color: white;
 	padding: 50px 0px;
 }
 
-a {
-	display: block;
-	color: white;
-	background-color: var(--main-background-color);
-	border-radius: 4px;
-	padding: 10px 15px;
-	margin: 40px auto 10px auto;
-	text-decoration: none;
-	font-weight: var(--main-font-weight);
+table,
+th,
+td {
+	border: 1px solid;
+	border-collapse: collapse;
+	border-color: white;
+}
+
+table {
+	width: 100%;
+}
+
+th {
+	text-align: left;
 }
 
 .button-header {
@@ -94,6 +96,17 @@ a {
 	text-decoration: none;
 	font-weight: var(--main-font-weight);
 	width: 200px;
+}
+
+.button-main {
+	display: block;
+	color: white;
+	background-color: var(--main-background-color);
+	border-radius: 4px;
+	padding: 10px 15px;
+	margin: 40px auto 10px auto;
+	text-decoration: none;
+	font-weight: var(--main-font-weight);
 }
 
 .container {
@@ -113,6 +126,7 @@ a {
 	display: block;
 	width: 100%;
 	border-radius: 5px;
+	filter: brightness(90%) contrast(110%);
 }
 
 .activities-section {
@@ -129,11 +143,82 @@ a {
 	border-radius: 10px;
 }
 
+.activities h5 {
+	color: black;
+	font-size: 20px;
+	padding-top: 10px;
+}
+
 .activity {
 	display: block;
 	border-radius: 5px;
 	background-color: white;
 	padding: 15px;
+}
+
+.activity-photo {
+	aspect-ratio: 4 / 3;
+}
+
+.food-section {
+	background-color: white;
+	text-align: center;
+}
+
+.food-block {
+	background-color: whitesmoke;
+}
+
+.photo-maps {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	max-width: 1000px;
+	margin: 0 auto;
+	border-radius: 10px;
+}
+
+.food-photo {
+	aspect-ratio: 1 / 1;
+}
+
+.food-and-drinks {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	max-width: 1000px;
+	margin: 0 auto;
+	grid-gap: 50px;
+	border-radius: 10px;
+}
+
+.food-and-drinks h5 {
+	color: black;
+	font-size: 20px;
+}
+
+.food-and-drinks p {
+	text-align: left;
+}
+
+.food-text {
+	padding: 15px;
+}
+
+.photo-section {
+	background-color: whitesmoke;
+	text-align: center;
+}
+
+.photos {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	max-width: 1000px;
+	margin: 0 auto;
+	grid-gap: 50px;
+	border-radius: 10px;
+}
+
+.photo {
+	width: 100%;
 }
 
 .footer {
@@ -144,6 +229,11 @@ a {
 	background-position: center;
 	color: white;
 	padding: 60px 150px;
+	border-radius: 0px 0px 5px 5px;
+}
+
+.footer-link {
+	color: white;
 }
 
 @media (max-width: 800px) {
@@ -180,6 +270,29 @@ a {
 	.activity {
 		margin: 0px 20px;
 	}
+
+	.activities h5 {
+		font-size: 30px;
+	}
+
+	.food-and-drinks h5 {
+		font-size: 30px;
+	}
+
+	.food-and-drinks {
+		grid-template-columns: 1fr;
+	}
+
+	.photos {
+		grid-template-columns: 1fr;
+	}
+
+	.photo-maps {
+		grid-template-columns: 1fr;
+		padding: 20px;
+		grid-gap: 20px;
+	}
+
 	.footer {
 		padding: 10px 40px;
 	}
